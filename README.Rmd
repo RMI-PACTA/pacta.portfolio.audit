@@ -13,7 +13,7 @@ knitr::opts_chunk$set(
 )
 ```
 
-# pacta.transition.monitor.utils
+# pacta.transition.monitor.utils <img src="man/figures/logo.png" align="right" width="120" />
 
 <!-- badges: start -->
 [![CRAN status](https://www.r-pkg.org/badges/version/pacta.transition.monitor.utils)](https://CRAN.R-project.org/package=pacta.transition.monitor.utils)

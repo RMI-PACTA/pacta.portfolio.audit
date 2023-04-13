@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# pacta.transition.monitor.utils
+# pacta.transition.monitor.utils <img src="man/figures/logo.png" align="right" width="120" />
 
 <!-- badges: start -->
 
