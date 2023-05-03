@@ -1,5 +1,5 @@
-Package: pacta.transition.monitor.utils
-Title: Utility Functions for Running PACTA on Capital Transition Monitor
+Package: pacta.portfolio.audit
+Title: Functions for Calculating Audit Statistics for PACTA on Capital Transition Monitor
 Version: 0.0.0.9000
 Authors@R: 
     c(person(given = "Jackson",
@@ -15,9 +15,8 @@ Authors@R:
       person(given = "Rocky Mountain Institute",
              role = c("cph", "fnd"),
              email = "PACTA4investors@rmi.org"))
-Description: These utils include functions that facilitate, for example, the 
-  logging and handling of warnings and errors, when functions are run in a 
-  server context.
+Description: These utils include functions that facilitate calculation of
+  useful audit statistics for PACTA on Capital Transition Monitor.
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
