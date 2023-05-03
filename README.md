@@ -9,7 +9,7 @@
 status](https://www.r-pkg.org/badges/version/pacta.portfolio.audit)](https://CRAN.R-project.org/package=pacta.portfolio.audit)
 [![Lifecycle:
 experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
-[![R-CMD-check](https://github.com/RMI-PACTA/pacta.portfolio.audit/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/RMI-PACTA/pacta.transition.monitor.utils/actions/workflows/R-CMD-check.yaml)
+[![R-CMD-check](https://github.com/RMI-PACTA/pacta.portfolio.audit/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/RMI-PACTA/pacta.portfolio.audit/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 The goal of pacta.portfolio.audit is to provide utility functions that
