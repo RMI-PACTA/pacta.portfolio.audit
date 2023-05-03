@@ -23,7 +23,7 @@ so:
 
 ``` r
 #install.packages("devtools")
-devtools::install_github("RMI-PACTA/pacta.portfolio.audit")
+pak::pak("RMI-PACTA/pacta.portfolio.audit")
 ```
 
 ## Example
