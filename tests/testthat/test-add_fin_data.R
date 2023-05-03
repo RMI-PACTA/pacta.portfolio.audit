@@ -1,9 +1,9 @@
 test_that("`set_portfolio_parameters()` works as expected", {
   portfolio <- tibble::tribble(
-    ~isin,          ~market_value, ~currency, ~portfolio_name,       ~investor_name,
-    "JP3868400007", 50000,         "GBP",     "TestPortfolio_Input", "Test",
-    "",             35184,         "GBP",     "TestPortfolio_Input", "Test",
-    NA,             28136,         "GBP",     "TestPortfolio_Input", "Test"
+    ~isin,          ~market_value, ~currency,
+    "JP3868400007", 50000,         "GBP",
+    "",             35184,         "GBP",
+    NA,             28136,         "GBP",
   )
 
   fin_data <- tibble::tribble(
@@ -22,8 +22,6 @@ test_that("`set_portfolio_parameters()` works as expected", {
   expect_equal(result$isin, portfolio$isin)
   expect_equal(result$market_value, portfolio$market_value)
   expect_equal(result$currency, portfolio$currency)
-  expect_equal(result$portfolio_name, portfolio$portfolio_name)
-  expect_equal(result$investor_name, portfolio$investor_name)
   expect_equal(result$company_id, c(fin_data$company_id, NA_real_, NA_real_))
   expect_equal(result$bloomberg_id, c(fin_data$bloomberg_id, NA_real_, NA_real_))
 })
