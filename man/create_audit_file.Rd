@@ -4,12 +4,10 @@
 \alias{create_audit_file}
 \title{A short description of the function}
 \usage{
-create_audit_file(portfolio_total, grouping_variables, has_revenue)
+create_audit_file(portfolio_total, has_revenue)
 }
 \arguments{
 \item{portfolio_total}{A description of the argument}
-
-\item{grouping_variables}{A character vector defining grouping variable}
 
 \item{has_revenue}{Logical determining if revenue data is included or not}
 }

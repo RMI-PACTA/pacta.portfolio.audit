@@ -10,7 +10,6 @@ process_raw_portfolio(
   fund_data,
   entity_info,
   currencies,
-  grouping_variables,
   total_fund_list = NULL,
   isin_to_fund_table = isin_to_fund_table
 )
@@ -25,8 +24,6 @@ process_raw_portfolio(
 \item{entity_info}{A description of the argument}
 
 \item{currencies}{A description of the argument}
-
-\item{grouping_variables}{A description of the argument}
 
 \item{total_fund_list}{A description of the argument}
 

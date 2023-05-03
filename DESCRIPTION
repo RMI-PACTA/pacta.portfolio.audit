@@ -32,9 +32,7 @@ Imports:
     pacta.portfolio.import,
     pacta.portfolio.utils,
     readr,
-    rlang,
     RSQLite,
-    stringr,
     tibble
 Remotes: 
     RMI-PACTA/pacta.portfolio.import,

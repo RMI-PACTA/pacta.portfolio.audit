@@ -4,16 +4,12 @@
 \alias{portfolio_summary}
 \title{A short description of the function}
 \usage{
-portfolio_summary(
-  portfolio_total,
-  grouping_variables = .GlobalEnv$grouping_variables
-)
+portfolio_summary(portfolio_total, ...)
 }
 \arguments{
 \item{portfolio_total}{A description of the argument}
 
-\item{grouping_variables}{A character vector specifiying the grouping variables.
-Typically \code{c("investor_name", "portfolio_name")}.}
+\item{...}{A catch-all for deprecated variables (e.g. \code{grouping_variables})}
 }
 \value{
 A description of the return value
