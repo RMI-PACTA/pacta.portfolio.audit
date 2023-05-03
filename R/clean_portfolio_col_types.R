@@ -1,24 +1,4 @@
-clean_portfolio_col_types <- function(portfolio, grouping_variables) {
-  if (is.character(portfolio$investor_name) == FALSE) {
-    write_log(
-      msg = paste0(
-        "Wrong variable class for investor_name. Should be character, but is ",
-        class(portfolio$investor_name),
-        ". This can introduce errors in further calculations!"
-      ),
-      file_path = .GlobalEnv$log_path
-    )
-  }
-  if (is.character(portfolio$portfolio_name) == FALSE) {
-    write_log(
-      msg = paste0(
-        "Wrong variable class for portfolio_name Should be character, but is ",
-        class(portfolio$portfolio_name),
-        ". This can introduce errors in further calculations!"
-      ),
-      file_path = .GlobalEnv$log_path
-    )
-  }
+clean_portfolio_col_types <- function(portfolio, ...) {
   if (is.numeric(portfolio$market_value) == FALSE) {
     write_log(
       msg = paste0(

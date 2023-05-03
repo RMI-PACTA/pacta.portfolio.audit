@@ -23,13 +23,6 @@ export_audit_information_data <- function(audit_file_ = .GlobalEnv$audit_file,
     stop("`audit_file_` is not a data.frame")
   }
 
-  if ("Meta Investor" %in% audit_file_$investor_name) {
-    audit_file_ <- filter(audit_file_, .data$investor_name != "Meta Investor")
-  }
-  if ("Meta Investor" %in% portfolio_total_$investor_name) {
-    portfolio_total_ <- filter(portfolio_total_, .data$investor_name != "Meta Investor")
-  }
-
   folder_path <- paste0(folder_path, "/")
   if (!is.na(project_name_)) {
     folder_path <- paste0(folder_path, project_name_, "_")

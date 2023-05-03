@@ -7,7 +7,6 @@
 #' @param fund_data A description of the argument
 #' @param entity_info A description of the argument
 #' @param currencies A description of the argument
-#' @param grouping_variables A description of the argument
 #' @param total_fund_list A description of the argument
 #' @param isin_to_fund_table A description of the argument
 #'
@@ -20,18 +19,15 @@ process_raw_portfolio <- function(portfolio_raw,
                                   fund_data,
                                   entity_info,
                                   currencies,
-                                  grouping_variables,
                                   total_fund_list = NULL,
                                   isin_to_fund_table = isin_to_fund_table) {
-  portfolio <- clear_portfolio_input_blanks(portfolio_raw, grouping_variables)
+  start_port_rows <- nrow(portfolio_raw)
 
-  start_port_rows <- nrow(portfolio)
+  portfolio <- add_holding_id(portfolio_raw)
 
-  portfolio <- add_holding_id(portfolio)
+  portfolio <- check_missing_cols(portfolio)
 
-  portfolio <- check_missing_cols(portfolio, grouping_variables)
-
-  portfolio <- clean_portfolio_col_types(portfolio, grouping_variables)
+  portfolio <- clean_portfolio_col_types(portfolio)
 
   portfolio <- convert_currencies(portfolio, currencies)
 

@@ -71,10 +71,11 @@ get_input_files <- function(portfolio_name_ref_all) {
   input_file_path <- path(input_path, paste0(portfolio_name_ref_all, ".csv"))
 
   portfolio <- pacta.portfolio.import::read_portfolio_csv(input_file_path)
+  portfolio <- portfolio %>% select(-"investor_name", -"portfolio_name")
 
   has_proper_names <-
     function(data) {
-      proper_names <- c("investor_name", "portfolio_name", "isin", "market_value", "currency")
+      proper_names <- c("isin", "market_value", "currency")
       all(proper_names %in% names(data))
     }
 
@@ -87,27 +88,7 @@ get_input_files <- function(portfolio_name_ref_all) {
     )
   }
 
-  set_portfolio_parameters(file_path = file.path(.GlobalEnv$par_file_path, paste0(portfolio_name_ref_all, "_PortfolioParameters.yml")))
-
-  # this writes the portfolio and ivestor names that are provided from the parameter file to the pf
-  # as agreed with Constructiva. They ensure grouped portfolios will get one name only.
-  portfolio <- portfolio %>%
-    mutate(
-      portfolio_name = .GlobalEnv$portfolio_name,
-      investor_name = .GlobalEnv$investor_name
-    ) %>%
-    dplyr::relocate("investor_name", "portfolio_name")
-
-  portfolio <- clean_portfolio_col_types(portfolio, .GlobalEnv$grouping_variables)
-  portfolio <- clear_portfolio_input_blanks(portfolio, .GlobalEnv$grouping_variables)
-
-  if (portfolio %>% pull("investor_name") %>% unique() %>% length() > 1) {
-    write_log(
-      msg = "Multiple investors detected. Only one investor at a time can be anaylsed",
-      file_path = .GlobalEnv$log_path
-    )
-    stop("Multiple investors detected. Only one investor at a time can be anaylsed")
-  }
+  portfolio <- clean_portfolio_col_types(portfolio)
 
   return(portfolio)
 }

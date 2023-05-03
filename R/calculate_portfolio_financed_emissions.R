@@ -25,8 +25,6 @@ calculate_portfolio_financed_emissions <- function(data,
                                                    average_sector_emission_intensities) {
   data <- data %>%
     select(
-      "investor_name",
-      "portfolio_name",
       "financial_sector",
       "factset_entity_id",
       "asset_type",
@@ -35,8 +33,6 @@ calculate_portfolio_financed_emissions <- function(data,
     filter(.data$asset_type %in% c("Equity", "Bonds")) %>%
     left_join_entity_info(entity_info) %>%
     group_by(
-      .data$investor_name,
-      .data$portfolio_name,
       .data$financial_sector,
       .data$factset_entity_id,
       .data$asset_type,
@@ -102,8 +98,6 @@ calculate_portfolio_financed_emissions <- function(data,
       )
     ) %>%
     group_by(
-      .data$investor_name,
-      .data$portfolio_name,
       .data$asset_type,
       .data$sector
     ) %>%

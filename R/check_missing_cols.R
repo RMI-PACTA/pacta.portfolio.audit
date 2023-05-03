@@ -1,5 +1,5 @@
-check_missing_cols <- function(portfolio, grouping_variables) {
-  required_input_cols <- c("holding_id", "market_value", "currency", "isin", grouping_variables, "number_of_shares")
+check_missing_cols <- function(portfolio, ...) {
+  required_input_cols <- c("holding_id", "market_value", "currency", "isin", "number_of_shares")
 
   if (!"number_of_shares" %in% colnames(portfolio)) {
     portfolio$number_of_shares <- NA_real_

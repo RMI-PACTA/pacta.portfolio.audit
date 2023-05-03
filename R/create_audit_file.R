@@ -3,18 +3,16 @@
 #' A longer description of the function
 #'
 #' @param portfolio_total A description of the argument
-#' @param grouping_variables A character vector defining grouping variable
 #' @param has_revenue Logical determining if revenue data is included or not
 #'
 #' @return A description of the return value
 #'
 #' @export
 
-create_audit_file <- function(portfolio_total, grouping_variables, has_revenue) {
+create_audit_file <- function(portfolio_total, has_revenue) {
   audit_file <- portfolio_total %>%
     select(
       all_of(c(
-        .env$grouping_variables,
         "holding_id",
         "isin",
         "value_usd",
