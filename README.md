@@ -22,7 +22,7 @@ You can install the development version of pacta.portfolio.audit like
 so:
 
 ``` r
-#install.packages("devtools")
+#install.packages("pak")
 pak::pak("RMI-PACTA/pacta.portfolio.audit")
 ```
 
