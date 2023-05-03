@@ -3,3 +3,4 @@
 ^pacta\.portfolio\.audit\.Rproj$
 ^\.Rproj\.user$
 ^\.github$
+^_pkgdown\.yml$

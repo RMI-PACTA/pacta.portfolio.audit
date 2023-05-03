@@ -8,6 +8,8 @@
 #'
 #' @return A description of the return value
 #'
+#' @importFrom dplyr rename
+#'
 #' @export
 
 add_revenue_split <- function(has_revenue, portfolio, revenue_data) {

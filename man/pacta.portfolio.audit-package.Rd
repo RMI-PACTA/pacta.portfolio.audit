@@ -10,6 +10,14 @@
 
 These utils include functions that facilitate calculation of useful audit statistics for PACTA on Capital Transition Monitor.
 }
+\seealso{
+Useful links:
+\itemize{
+  \item \url{https://github.com/RMI-PACTA/pacta.portfolio.audit}
+  \item Report bugs at \url{https://github.com/RMI-PACTA/pacta.portfolio.audit/issues}
+}
+
+}
 \author{
 \strong{Maintainer}: Jackson Hoffart \email{jackson.hoffart@gmail.com} (\href{https://orcid.org/0000-0002-8600-5042}{ORCID}) [contractor]
 
