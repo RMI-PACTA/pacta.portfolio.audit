@@ -71,7 +71,8 @@ get_input_files <- function(portfolio_name_ref_all) {
   input_file_path <- path(input_path, paste0(portfolio_name_ref_all, ".csv"))
 
   portfolio <- pacta.portfolio.import::read_portfolio_csv(input_file_path)
-  portfolio <- portfolio %>% select(-"investor_name", -"portfolio_name")
+  portfolio <- portfolio %>%
+    select(-dplyr::starts_with(c("investor_name", "portfolio_name")))
 
   has_proper_names <-
     function(data) {
