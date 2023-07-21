@@ -1,6 +1,6 @@
 Package: pacta.portfolio.audit
 Title: Functions for Calculating Audit Statistics for PACTA on Capital Transition Monitor
-Version: 0.0.1
+Version: 0.0.1.9000
 Authors@R: 
     c(person(given = "Jackson",
              family = "Hoffart",
