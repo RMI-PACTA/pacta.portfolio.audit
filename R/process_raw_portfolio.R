@@ -78,6 +78,8 @@ process_raw_portfolio <- function(portfolio_raw,
     fund_portfolio <- add_fin_data(fund_portfolio, fin_data)
     fund_portfolio <- left_join_entity_info(fund_portfolio, entity_info)
 
+    fund_portfolio <- calculate_number_of_shares(fund_portfolio)
+
     # add fund_portfolio and check that the total value is the same
     portfolio_total <- add_fund_portfolio(portfolio, fund_portfolio, cols_of_funds)
   } else {
