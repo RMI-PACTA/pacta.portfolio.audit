@@ -1,0 +1,36 @@
+---
+title: "Attributing Company Activities to Financial Assets"
+---
+
+The PACTA methodology links physical CO2-emitting activities to financial holdings. It achieves this by applying various attribution principles that enable the allocation of an economic value of interest (e.g. capacity, production, emission intensities, etc.) from a corporation to a financial holding.
+
+Currently, PACTA offers the possibility to apply two different styles of attribution principles:
+  - The Ownership Approach
+  - The Portfolio Weight Approach
+
+## Ownership Approach
+
+With the ownership approach, the portfolio's value of interest is allocated based on its ownership of a company. If a portfolio holds $S_i$ shares of a company that emitted a total of $S$ shares and has an economic value of interest (e.g. Production) of $P$, then the value attributed to the portfolio $P_i$ will be:
+
+$P_i = P * \dfrac{S_i}{S}$
+
+The ownership approach is available only for listed equity holdings, and it is applied to both directly and indirectly held holdings.
+
+### Limitations
+
+The main challenge with this allocation factor arises when it is extended beyond equity holdings. In such cases, ownership percentages cannot be calculated independently of financial asset price movements, leading to price biases. These biases introduce fluctuations in the metric that may not be correlated with changes in capital expenditure or production plans. Other limitations include:
+- Bonds and credit instruments are financing tools, not ownership instruments, making the ownership approach counter-intuitive for them.
+- Applying the ownership approach to credit portfolios can result in highly volatile outcomes due to frequent changes in total debt outstanding and other ownership calculation denominators caused by regular debt issuances.
+- An unexpected twist occurs when a company issues more debt, leading to a decrease in ownership share for investors. While this seems logical, it can result in decreased risk exposure for brown technologies, which means the portfolio becomes less exposed to high-carbon technologies and risks. However, in reality, the risk may increase with higher debt. This is not an issue for equity holdings, as outstanding shares do not change frequently, and ownership and risk genuinely change with the percentage of shares in the portfolio.
+- Companies' production intensity (prod/$) can significantly vary due to differences in their financing mix (debt vs. equity). Certain companies can exert significant influence on portfolio-level results, even with low portfolio weighting.
+
+## Portfolio Weight Approach
+
+With the portfolio weight approach, the value of interest is allocated to the portfolio based on the relative weighting of that position within the portfolio. For a portfolio with an exposure, $E_i$, to a specific company and a total exposure of the portfolio to that sector, $E$, the economic value of interest attributed to the portfolio, $P_i$, will be:
+  $P_i = P * \dfrac{E_i}{E}$
+
+The portfolio weight approach is more intuitive for credit portfolios since it can be said to represent the capital allocation decision of the relationship manager behind the portfolio.
+
+### Limitations
+
+The portfolio weight approach lacks a straightforward physical interpretation. When considering alignment, it's unclear why varying relative exposures to companies would significantly impact metric results. Instead, this approach is more useful as a risk metric. A high relative exposure to high-carbon companies will lead to a higher degree of risk, regardless of the company's relative size.
