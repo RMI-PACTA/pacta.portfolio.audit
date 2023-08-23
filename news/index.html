@@ -24,6 +24,12 @@
       <ul class="navbar-nav"><li class="nav-item">
   <a class="nav-link" href="../reference/index.html">Reference</a>
 </li>
+<li class="nav-item dropdown">
+  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true" id="dropdown-articles">Articles</a>
+  <div class="dropdown-menu" aria-labelledby="dropdown-articles">
+    <a class="dropdown-item" href="../articles/qttributing-company-activities-to-financial-assets.html">Attributing Company Activities to Financial Assets</a>
+  </div>
+</li>
 <li class="active nav-item">
   <a class="nav-link" href="../news/index.html">Changelog</a>
 </li>
@@ -46,7 +52,9 @@
 
     <div class="section level2">
 <h2 class="pkg-version" data-toc-text="development version" id="pactaportfolioaudit-development-version">pacta.portfolio.audit (development version)<a class="anchor" aria-label="anchor" href="#pactaportfolioaudit-development-version"></a></h2>
-</div>
+<ul><li><p>Add vignette/article Attributing Company Activities to Financial Assets (<a href="https://github.com/RMI-PACTA/pacta.portfolio.audit/issues/12" class="external-link">#12</a>)</p></li>
+<li><p>Calculate the number of shares for component holdings of funds when they are expanded, which results in an appropriate ownership weight being calculated (rather than always 0 as before) for equity indirectly held through a fund (<a href="https://github.com/RMI-PACTA/pacta.portfolio.audit/issues/12" class="external-link">#12</a>)</p></li>
+</ul></div>
     <div class="section level2">
 <h2 class="pkg-version" data-toc-text="0.0.1" id="pactaportfolioaudit-001">pacta.portfolio.audit 0.0.1<a class="anchor" aria-label="anchor" href="#pactaportfolioaudit-001"></a></h2>
 <ul><li>Added a <code>NEWS.md</code> file to track changes to the package.</li>
