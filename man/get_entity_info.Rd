@@ -4,7 +4,12 @@
 \alias{get_entity_info}
 \title{A short description of the function}
 \usage{
-get_entity_info()
+get_entity_info(dir = .GlobalEnv$analysis_inputs_path)
+}
+\arguments{
+\item{dir}{A string containing the path to the directory where the entity
+info files should be found, typically the value of the
+\code{analysis_inputs_path} parameter}
 }
 \value{
 A description of the return value

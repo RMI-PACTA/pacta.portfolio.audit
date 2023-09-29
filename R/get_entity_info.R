@@ -2,6 +2,10 @@
 #'
 #' A longer description of the function
 #'
+#' @param dir A string containing the path to the directory where the entity
+#'   info files should be found, typically the value of the
+#'   `analysis_inputs_path` parameter
+#'
 #' @return A description of the return value
 #'
 #' @export
