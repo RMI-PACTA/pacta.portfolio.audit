@@ -57,13 +57,22 @@
 
     <div class="section level2">
     <h2 id="ref-usage">Usage<a class="anchor" aria-label="anchor" href="#ref-usage"></a></h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">get_input_files</span><span class="op">(</span><span class="va">portfolio_name_ref_all</span><span class="op">)</span></span></code></pre></div>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">get_input_files</span><span class="op">(</span></span>
+<span>  <span class="va">portfolio_name_ref_all</span>,</span>
+<span>  project_location <span class="op">=</span> <span class="va">.GlobalEnv</span><span class="op">$</span><span class="va">project_location</span></span>
+<span><span class="op">)</span></span></code></pre></div>
     </div>
 
     <div class="section level2">
     <h2 id="arguments">Arguments<a class="anchor" aria-label="anchor" href="#arguments"></a></h2>
     <dl><dt>portfolio_name_ref_all</dt>
 <dd><p>A description of the argument</p></dd>
+
+
+<dt>project_location</dt>
+<dd><p>A charcter string defining the path to the user's
+data directory, usually "working_dir" and the value held in the
+<code>project_location</code> parameter</p></dd>
 
 </dl></div>
     <div class="section level2">
