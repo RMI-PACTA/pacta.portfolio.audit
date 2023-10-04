@@ -1,5 +1,7 @@
 # pacta.portfolio.audit (development version)
 
+* `get_input_files()` gains a `project_location` argument allowing one to explicitly pass the `project_location` value rather than depending on it being available in the global environment, while the default behavior maintains backward compatibility with previous workflows (#18)
+
 * `get_entity_info()` gains a `dir` argument allowing one to explicitly pass the `analysis_inputs_path` value rather than depending on it being available in the global environment, while the default behavior maintains backward compatibility with previous workflows (#17)
 
 * Add vignette/article Attributing Company Activities to Financial Assets (#12)

@@ -3,15 +3,18 @@
 #' A longer description of the function
 #'
 #' @param portfolio_name_ref_all A description of the argument
+#' @param project_location A charcter string defining the path to the user's
+#'   data directory, usually "working_dir" and the value held in the
+#'   `project_location` parameter
 #'
 #' @return A description of the return value
 #'
 #' @export
 
-get_input_files <- function(portfolio_name_ref_all) {
+get_input_files <- function(portfolio_name_ref_all, project_location = .GlobalEnv$project_location) {
   portfolio <- tibble()
 
-  input_path <- file.path(.GlobalEnv$project_location, "20_Raw_Inputs")
+  input_path <- file.path(project_location, "20_Raw_Inputs")
 
   # check that the provided reference names match to the input files
 
@@ -49,7 +52,7 @@ get_input_files <- function(portfolio_name_ref_all) {
     stop("Missing input argument")
   }
 
-  portfolio_file_names <- list.files(file.path(.GlobalEnv$project_location, "10_Parameter_File"))
+  portfolio_file_names <- list.files(file.path(project_location, "10_Parameter_File"))
   portfolio_file_names <- portfolio_file_names[grepl("_PortfolioParameters.yml", portfolio_file_names)]
   portfolio_file_names <- gsub("_PortfolioParameters.yml", "", portfolio_file_names)
 

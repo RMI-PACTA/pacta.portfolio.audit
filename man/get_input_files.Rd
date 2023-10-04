@@ -4,10 +4,17 @@
 \alias{get_input_files}
 \title{A short description of the function}
 \usage{
-get_input_files(portfolio_name_ref_all)
+get_input_files(
+  portfolio_name_ref_all,
+  project_location = .GlobalEnv$project_location
+)
 }
 \arguments{
 \item{portfolio_name_ref_all}{A description of the argument}
+
+\item{project_location}{A charcter string defining the path to the user's
+data directory, usually "working_dir" and the value held in the
+\code{project_location} parameter}
 }
 \value{
 A description of the return value
