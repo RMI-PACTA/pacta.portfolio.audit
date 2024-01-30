@@ -2,16 +2,16 @@ Package: pacta.portfolio.audit
 Title: Functions for Calculating Audit Statistics for PACTA on Capital Transition Monitor
 Version: 0.0.1.9000
 Authors@R: 
-    c(person(given = "Jackson",
-             family = "Hoffart",
-             role = c("aut", "cre", "ctr"),
-             email = "jackson.hoffart@gmail.com",
-             comment = c(ORCID = "0000-0002-8600-5042")),
-    person(given = "CJ",
+    c(person(given = "CJ",
              family = "Yetman",
-             role = c("aut", "ctr"),
+             role = c("aut", "cre", "ctr"),
              email = "cj@cjyetman.com",
              comment = c(ORCID = "0000-0001-5099-9500")),
+    person(given = "Jackson",
+             family = "Hoffart",
+             role = c("aut", "ctr"),
+             email = "jackson.hoffart@gmail.com",
+             comment = c(ORCID = "0000-0002-8600-5042")),
       person(given = "Rocky Mountain Institute",
              role = c("cph", "fnd"),
              email = "PACTA4investors@rmi.org"))
