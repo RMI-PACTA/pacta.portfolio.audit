@@ -3,7 +3,7 @@ pkgdown: 2.0.7
 pkgdown_sha: ~
 articles:
   qttributing-company-activities-to-financial-assets: qttributing-company-activities-to-financial-assets.html
-last_built: 2024-01-31T11:32Z
+last_built: 2024-02-26T22:31Z
 urls:
   reference: https://rmi-pacta.github.io/pacta.portfolio.audit/reference
   article: https://rmi-pacta.github.io/pacta.portfolio.audit/articles
