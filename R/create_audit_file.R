@@ -25,7 +25,8 @@ create_audit_file <- function(portfolio_total, has_revenue) {
         "bics_sector",
         "sectors_with_assets",
         "has_ald_in_fin_sector",
-        "flag"
+        "flag",
+        ai_company_id = "ar_company_id"
       ))
     )
 
