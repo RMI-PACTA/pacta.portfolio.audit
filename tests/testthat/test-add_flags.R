@@ -1,4 +1,4 @@
-test_that("", {
+test_that("basic functionality works as expected", {
   portfolio <- data.frame(
     has_currency = c(FALSE, TRUE, TRUE, TRUE, TRUE),
     has_valid_input = c(TRUE, FALSE, TRUE, TRUE, TRUE),

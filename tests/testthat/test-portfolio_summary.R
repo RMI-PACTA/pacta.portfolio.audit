@@ -1,4 +1,4 @@
-test_that("", {
+test_that("basic functionality works as expected", {
   portfolio_total <- data.frame(
     asset_type = c("Equity", "Bonds", "Other"),
     financial_sector = c("Power", "Oil&Gas", "Automotive"),

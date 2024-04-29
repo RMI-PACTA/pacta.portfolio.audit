@@ -1,4 +1,4 @@
-test_that("", {
+test_that("basic functionality works as expected", {
   portfolio <- data.frame(x = LETTERS[1:5])
   expected_output <- data.frame(x = LETTERS[1:5], holding_id = as.character(1:5))
 

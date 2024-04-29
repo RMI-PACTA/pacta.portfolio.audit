@@ -1,4 +1,4 @@
-test_that("", {
+test_that("basic functionality works as expected", {
   data <- data.frame(
     financial_sector = "xxx",
     factset_entity_id = "xyz1223",

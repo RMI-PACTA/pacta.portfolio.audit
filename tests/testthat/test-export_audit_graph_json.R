@@ -1,4 +1,4 @@
-test_that("", {
+test_that("basic functionality works as expected", {
   all_flags <- c(
     "Missing currency information",
     "Negative or missing input value",
