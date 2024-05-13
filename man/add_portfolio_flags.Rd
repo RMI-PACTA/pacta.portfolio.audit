@@ -4,10 +4,13 @@
 \alias{add_portfolio_flags}
 \title{Adds flags columns to a portfolio data frame}
 \usage{
-add_portfolio_flags(portfolio)
+add_portfolio_flags(portfolio, currencies)
 }
 \arguments{
 \item{portfolio}{A data frame containing a portfolio}
+
+\item{currencies}{A data frame containing a currencies and their exchange
+rates.}
 }
 \value{
 A data frame of the portfolio with the flags columns added
