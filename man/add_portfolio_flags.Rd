@@ -9,7 +9,7 @@ add_portfolio_flags(portfolio, currencies)
 \arguments{
 \item{portfolio}{A data frame containing a portfolio}
 
-\item{currencies}{A data frame containing a currencies and their exchange
+\item{currencies}{A data frame containing ISO 4217 currency codes and their exchange
 rates.}
 }
 \value{
