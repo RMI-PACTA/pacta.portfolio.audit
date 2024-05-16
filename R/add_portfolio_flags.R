@@ -5,7 +5,7 @@
 #' financial data.
 #'
 #' @param portfolio A data frame containing a portfolio
-#' @param currencies A data frame containing a currencies and their exchange
+#' @param currencies A data frame containing ISO 4217 currency codes and their exchange
 #' rates.
 #'
 #' @return A data frame of the portfolio with the flags columns added
