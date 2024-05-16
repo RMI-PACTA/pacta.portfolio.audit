@@ -5,3 +5,4 @@
 ^\.github$
 ^_pkgdown\.yml$
 ^vignettes/articles$
+^codecov\.yml$
