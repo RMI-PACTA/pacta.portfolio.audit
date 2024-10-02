@@ -12,7 +12,7 @@ Authors@R:
              role = c("aut", "ctr"),
              email = "jackson.hoffart@gmail.com",
              comment = c(ORCID = "0000-0002-8600-5042")),
-      person(given = "Rocky Mountain Institute",
+      person(given = "RMI",
              role = c("cph", "fnd"),
              email = "PACTA4investors@rmi.org"))
 Description: These utils include functions that facilitate calculation of
