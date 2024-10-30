@@ -11,7 +11,7 @@
 [![CRAN
 status](https://www.r-pkg.org/badges/version/pacta.portfolio.audit)](https://CRAN.R-project.org/package=pacta.portfolio.audit)
 [![pacta.portfolio.audit status
-badge](https://rmi-pacta.r-universe.dev/badges/pacta.portfolio.audit)](https://rmi-pacta.r-universe.dev/ui#package:pacta.portfolio.audit)
+badge](https://rmi-pacta.r-universe.dev/badges/pacta.portfolio.audit)](https://rmi-pacta.r-universe.dev/pacta.portfolio.audit)
 <!-- badges: end -->
 
 The goal of pacta.portfolio.audit is to provide utility functions that
