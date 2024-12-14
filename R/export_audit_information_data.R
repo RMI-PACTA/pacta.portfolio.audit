@@ -1,13 +1,18 @@
-#' A short description of the function
+#' Export audit data for Transition Monitor website
 #'
-#' A longer description of the function
+#' Exports three audit files for the Transition Monitor website, allowing the
+#' website GUI to report to the user details about the audit process result.
 #'
-#' @param audit_file_ A description of the argument
-#' @param portfolio_total_ A description of the argument
-#' @param folder_path A description of the argument
-#' @param project_name_ A description of the argument
+#' @param audit_file_ A data frame containing the audit data
+#' @param portfolio_total_ A data frame containing the processed portfolio data
+#' @param folder_path A length one character vector specifying the path where
+#'   the exported audit files should be saved
+#' @param project_name_ An optional length one character vector specifying a
+#'   project name to prepend to the filenames. Default is `NA` which has no
+#'   effect.
 #'
-#' @return A description of the return value
+#' @return Returns `NULL` invisibly as it is called only for its side effect of
+#'   saving files
 #'
 #' @export
 

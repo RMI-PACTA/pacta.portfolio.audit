@@ -3,7 +3,7 @@
 #' A longer description of the function
 #'
 #' @param portfolio_name_ref_all A description of the argument
-#' @param project_location A charcter string defining the path to the user's
+#' @param project_location A character string defining the path to the user's
 #'   data directory, usually "working_dir" and the value held in the
 #'   `project_location` parameter
 #'

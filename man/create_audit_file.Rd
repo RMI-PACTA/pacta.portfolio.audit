@@ -2,18 +2,19 @@
 % Please edit documentation in R/create_audit_file.R
 \name{create_audit_file}
 \alias{create_audit_file}
-\title{A short description of the function}
+\title{Create the audit file for a processed portfolio}
 \usage{
 create_audit_file(portfolio_total, has_revenue)
 }
 \arguments{
-\item{portfolio_total}{A description of the argument}
+\item{portfolio_total}{A data frame}
 
 \item{has_revenue}{Logical determining if revenue data is included or not}
 }
 \value{
-A description of the return value
+A data frame
 }
 \description{
-A longer description of the function
+Creates an audit file from a processed portfolio, selecting the expected
+columns.
 }

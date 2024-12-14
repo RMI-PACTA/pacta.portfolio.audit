@@ -2,7 +2,7 @@
 % Please edit documentation in R/export_audit_information_data.R
 \name{export_audit_information_data}
 \alias{export_audit_information_data}
-\title{A short description of the function}
+\title{Export audit data for Transition Monitor website}
 \usage{
 export_audit_information_data(
   audit_file_ = .GlobalEnv$audit_file,
@@ -12,17 +12,22 @@ export_audit_information_data(
 )
 }
 \arguments{
-\item{audit_file_}{A description of the argument}
+\item{audit_file_}{A data frame containing the audit data}
 
-\item{portfolio_total_}{A description of the argument}
+\item{portfolio_total_}{A data frame containing the processed portfolio data}
 
-\item{folder_path}{A description of the argument}
+\item{folder_path}{A length one character vector specifying the path where
+the exported audit files should be saved}
 
-\item{project_name_}{A description of the argument}
+\item{project_name_}{An optional length one character vector specifying a
+project name to prepend to the filenames. Default is \code{NA} which has no
+effect.}
 }
 \value{
-A description of the return value
+Returns \code{NULL} invisibly as it is called only for its side effect of
+saving files
 }
 \description{
-A longer description of the function
+Exports three audit files for the Transition Monitor website, allowing the
+website GUI to report to the user details about the audit process result.
 }

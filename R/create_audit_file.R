@@ -1,11 +1,12 @@
-#' A short description of the function
+#' Create the audit file for a processed portfolio
 #'
-#' A longer description of the function
+#' Creates an audit file from a processed portfolio, selecting the expected
+#' columns.
 #'
-#' @param portfolio_total A description of the argument
+#' @param portfolio_total A data frame
 #' @param has_revenue Logical determining if revenue data is included or not
 #'
-#' @return A description of the return value
+#' @return A data frame
 #'
 #' @export
 

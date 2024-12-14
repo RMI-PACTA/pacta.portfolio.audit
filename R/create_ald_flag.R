@@ -1,12 +1,16 @@
-#' A short description of the function
+#' Add columns to flag existence of data in ABCD for each holding
 #'
-#' A longer description of the function
+#' Adds columns to a portfolio data frame flagging the existence of data related
+#' to each holding in the ABCD data. It will add the `has_asset_level_data`,
+#' `sectors_with_assets`, and `has_ald_in_fin_sector` columns.
 #'
-#' @param portfolio A description of the argument
-#' @param comp_fin_data A description of the argument
-#' @param debt_fin_data A description of the argument
+#' @param portfolio A data frame containing portfolio data
+#' @param comp_fin_data A data frame containing company financial data
+#' @param debt_fin_data A data frame containing debt financial data
 #'
-#' @return A description of the return value
+#' @return A data frame similar to the input portfolion data frame with three
+#'   added columns `has_asset_level_data`, `sectors_with_assets`, and
+#'   `has_ald_in_fin_sector`
 #'
 #' @export
 

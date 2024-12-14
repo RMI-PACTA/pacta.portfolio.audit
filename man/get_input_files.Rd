@@ -12,7 +12,7 @@ get_input_files(
 \arguments{
 \item{portfolio_name_ref_all}{A description of the argument}
 
-\item{project_location}{A charcter string defining the path to the user's
+\item{project_location}{A character string defining the path to the user's
 data directory, usually "working_dir" and the value held in the
 \code{project_location} parameter}
 }

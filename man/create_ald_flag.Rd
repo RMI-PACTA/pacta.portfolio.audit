@@ -2,20 +2,24 @@
 % Please edit documentation in R/create_ald_flag.R
 \name{create_ald_flag}
 \alias{create_ald_flag}
-\title{A short description of the function}
+\title{Add columns to flag existence of data in ABCD for each holding}
 \usage{
 create_ald_flag(portfolio, comp_fin_data, debt_fin_data)
 }
 \arguments{
-\item{portfolio}{A description of the argument}
+\item{portfolio}{A data frame containing portfolio data}
 
-\item{comp_fin_data}{A description of the argument}
+\item{comp_fin_data}{A data frame containing company financial data}
 
-\item{debt_fin_data}{A description of the argument}
+\item{debt_fin_data}{A data frame containing debt financial data}
 }
 \value{
-A description of the return value
+A data frame similar to the input portfolion data frame with three
+added columns \code{has_asset_level_data}, \code{sectors_with_assets}, and
+\code{has_ald_in_fin_sector}
 }
 \description{
-A longer description of the function
+Adds columns to a portfolio data frame flagging the existence of data related
+to each holding in the ABCD data. It will add the \code{has_asset_level_data},
+\code{sectors_with_assets}, and \code{has_ald_in_fin_sector} columns.
 }
