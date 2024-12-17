@@ -2,7 +2,7 @@
 % Please edit documentation in R/get_entity_info.R
 \name{get_entity_info}
 \alias{get_entity_info}
-\title{A short description of the function}
+\title{Loads entity info so that it's ready to use}
 \usage{
 get_entity_info(dir = .GlobalEnv$analysis_inputs_path)
 }
@@ -12,8 +12,10 @@ info files should be found, typically the value of the
 \code{analysis_inputs_path} parameter}
 }
 \value{
-A description of the return value
+A data frame containing the entity info, or a path with the class "db_path", either of which can be used as input to \code{left_join_entity_info()}
 }
 \description{
-A longer description of the function
+Loads entity info from the specified path so that it's ready to use, either
+by loading the data into memory from an RDS file, or returning a path to an
+SQLite file with the class "db_path".
 }

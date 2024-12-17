@@ -2,7 +2,7 @@
 % Please edit documentation in R/get_input_files.R
 \name{get_input_files}
 \alias{get_input_files}
-\title{A short description of the function}
+\title{Import a portfolio CSV according to parameters}
 \usage{
 get_input_files(
   portfolio_name_ref_all,
@@ -10,15 +10,18 @@ get_input_files(
 )
 }
 \arguments{
-\item{portfolio_name_ref_all}{A description of the argument}
+\item{portfolio_name_ref_all}{A length one character vector specifying the
+portfolio name}
 
 \item{project_location}{A character string defining the path to the user's
 data directory, usually "working_dir" and the value held in the
 \code{project_location} parameter}
 }
 \value{
-A description of the return value
+A data frame containing the imported portfolio data
 }
 \description{
-A longer description of the function
+Import a portfolio CSV from a specified location after verifying that it
+matches the specified \code{portfolio_name_ref_all} and a matching parameters file
+exists.
 }

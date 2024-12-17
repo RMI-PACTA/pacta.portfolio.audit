@@ -1,12 +1,16 @@
-#' A short description of the function
+#' Merge entity info with portfolio data
 #'
-#' A longer description of the function
+#' Merges entity info with portfolio data, automatically adapting to whether the
+#' entity info is a data frame in memory or a path to an SQLite database
+#' containing the entity info.
 #'
-#' @param data A description of the argument
-#' @param entity_info A description of the argument
-#' @param by A description of the argument
+#' @param data A data frame containing the portfolio data
+#' @param entity_info A data frame or a path to a SQLite database containing the
+#'   entity info
+#' @param by A length on character vector specifying the column by which to
+#'   merge the datasets. Typically, and by default, "factset_entity_id"
 #'
-#' @return A description of the return value
+#' @return A data frame containing the portfolio data with entity info merged
 #'
 #' @export
 

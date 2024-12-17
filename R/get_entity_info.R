@@ -1,12 +1,14 @@
-#' A short description of the function
+#' Loads entity info so that it's ready to use
 #'
-#' A longer description of the function
+#' Loads entity info from the specified path so that it's ready to use, either
+#' by loading the data into memory from an RDS file, or returning a path to an
+#' SQLite file with the class "db_path".
 #'
 #' @param dir A string containing the path to the directory where the entity
 #'   info files should be found, typically the value of the
 #'   `analysis_inputs_path` parameter
 #'
-#' @return A description of the return value
+#' @return A data frame containing the entity info, or a path with the class "db_path", either of which can be used as input to `left_join_entity_info()`
 #'
 #' @export
 

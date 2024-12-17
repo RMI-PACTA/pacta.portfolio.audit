@@ -2,20 +2,24 @@
 % Please edit documentation in R/left_join_entity_info.R
 \name{left_join_entity_info}
 \alias{left_join_entity_info}
-\title{A short description of the function}
+\title{Merge entity info with portfolio data}
 \usage{
 left_join_entity_info(data, entity_info, by = "factset_entity_id")
 }
 \arguments{
-\item{data}{A description of the argument}
+\item{data}{A data frame containing the portfolio data}
 
-\item{entity_info}{A description of the argument}
+\item{entity_info}{A data frame or a path to a SQLite database containing the
+entity info}
 
-\item{by}{A description of the argument}
+\item{by}{A length on character vector specifying the column by which to
+merge the datasets. Typically, and by default, "factset_entity_id"}
 }
 \value{
-A description of the return value
+A data frame containing the portfolio data with entity info merged
 }
 \description{
-A longer description of the function
+Merges entity info with portfolio data, automatically adapting to whether the
+entity info is a data frame in memory or a path to an SQLite database
+containing the entity info.
 }

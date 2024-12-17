@@ -1,13 +1,16 @@
-#' A short description of the function
+#' Import a portfolio CSV according to parameters
 #'
-#' A longer description of the function
+#' Import a portfolio CSV from a specified location after verifying that it
+#' matches the specified `portfolio_name_ref_all` and a matching parameters file
+#' exists.
 #'
-#' @param portfolio_name_ref_all A description of the argument
+#' @param portfolio_name_ref_all A length one character vector specifying the
+#'   portfolio name
 #' @param project_location A character string defining the path to the user's
 #'   data directory, usually "working_dir" and the value held in the
 #'   `project_location` parameter
 #'
-#' @return A description of the return value
+#' @return A data frame containing the imported portfolio data
 #'
 #' @export
 
