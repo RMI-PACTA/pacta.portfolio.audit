@@ -8,10 +8,8 @@
 [![Lifecycle:stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html#stable)
 [![R-CMD-check](https://github.com/RMI-PACTA/pacta.portfolio.audit/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/RMI-PACTA/pacta.portfolio.audit/actions/workflows/R-CMD-check.yaml)
 [![codecov](https://img.shields.io/codecov/c/github/rmi-pacta/pacta.portfolio.audit)](https://codecov.io/gh/RMI-PACTA/pacta.portfolio.audit)
-[![CRAN
-status](https://www.r-pkg.org/badges/version/pacta.portfolio.audit)](https://CRAN.R-project.org/package=pacta.portfolio.audit)
-[![pacta.portfolio.audit status
-badge](https://rmi-pacta.r-universe.dev/badges/pacta.portfolio.audit)](https://rmi-pacta.r-universe.dev/pacta.portfolio.audit)
+[![CRAN-status](https://www.r-pkg.org/badges/version/pacta.portfolio.audit)](https://CRAN.R-project.org/package=pacta.portfolio.audit)
+[![pacta.portfolio.audit-status-badge](https://rmi-pacta.r-universe.dev/badges/pacta.portfolio.audit)](https://rmi-pacta.r-universe.dev/pacta.portfolio.audit)
 <!-- badges: end -->
 
 The goal of pacta.portfolio.audit is to provide utility functions that
