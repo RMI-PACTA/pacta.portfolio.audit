@@ -22,8 +22,7 @@ knitr::opts_chunk$set(
 <!-- badges: end -->
 
 The goal of pacta.portfolio.audit is to provide utility functions that 
-enable the calculation of audit statistics for PACTA on the 
-[Capital Transition Monitor Platform](https://platform.transitionmonitor.com/). 
+enable the calculation of audit statistics for a PACTA analysis. 
 
 ## Installation
 
