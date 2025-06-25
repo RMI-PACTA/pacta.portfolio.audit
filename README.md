@@ -5,7 +5,8 @@
 
 <!-- badges: start -->
 
-[![Lifecycle: stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html#stable)
+[![Lifecycle:
+stable](https://img.shields.io/badge/lifecycle-experimental-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html#stable)
 [![R-CMD-check](https://github.com/RMI-PACTA/pacta.portfolio.audit/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/RMI-PACTA/pacta.portfolio.audit/actions/workflows/R-CMD-check.yaml)
 [![codecov](https://img.shields.io/codecov/c/github/rmi-pacta/pacta.portfolio.audit)](https://codecov.io/gh/RMI-PACTA/pacta.portfolio.audit)
 [![CRAN
@@ -15,8 +16,7 @@ badge](https://rmi-pacta.r-universe.dev/badges/pacta.portfolio.audit)](https://r
 <!-- badges: end -->
 
 The goal of pacta.portfolio.audit is to provide utility functions that
-enable the calculation of audit statistics for PACTA on the [Capital
-Transition Monitor Platform](https://platform.transitionmonitor.com/).
+enable the calculation of audit statistics for a PACTA analysis.
 
 ## Installation
 
