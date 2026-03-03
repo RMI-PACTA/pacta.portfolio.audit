@@ -17,7 +17,7 @@
 Source:
 [`DESCRIPTION`](https://github.com/RMI-PACTA/pacta.portfolio.audit/blob/main/DESCRIPTION)
 
-Yetman C, Hoffart J (2025). *pacta.portfolio.audit: Functions for
+Yetman C, Hoffart J (2026). *pacta.portfolio.audit: Functions for
 Calculating Audit Statistics for PACTA on Capital Transition Monitor*. R
 package version 0.0.1.9000,
 <https://github.com/RMI-PACTA/pacta.portfolio.audit>.
@@ -25,7 +25,7 @@ package version 0.0.1.9000,
     @Manual{,
       title = {pacta.portfolio.audit: Functions for Calculating Audit Statistics for PACTA on Capital Transition Monitor},
       author = {CJ Yetman and Jackson Hoffart},
-      year = {2025},
+      year = {2026},
       note = {R package version 0.0.1.9000},
       url = {https://github.com/RMI-PACTA/pacta.portfolio.audit},
     }
